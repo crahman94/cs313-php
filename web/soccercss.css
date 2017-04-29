@@ -9,6 +9,30 @@
 	font-size: 0.7em;
 }
 
+#body {
+	background-color: #018E0E;
+}
+
+#h1 {
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+}
+
+#imgp {
+    text-align: center;
+}
+
+imgp:hover{
+  display: block;
+}
+
+#img1 {
+  width: 700px;
+  height: 325px;
+
+}
+
 #div2 {
 	background-color: #4DD0E1;
 }
