@@ -1,6 +1,6 @@
 // ta02.js
 function clickMe() {
-	alert("Clicked!");
+	window.location='http://www.soccernews.com/';
 }
 
 function changeColor() {
