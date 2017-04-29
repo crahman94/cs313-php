@@ -52,4 +52,3 @@ rssfeed_item_description_link_color="#333";
 rssfeed_item_description_tag="off";
 rssfeed_no_items="0";
 rssfeed_cache = "29ad520974a0c42edd9c106192dead81";
-src="http://feed.surfing-waves.com/js/rss-feed.js"
