@@ -1,13 +1,13 @@
 // ta02.js
-function clickMe() {
+function soccerNews() {
 	window.location='http://www.soccernews.com/';
 }
 
 function changeColor() {
-	var textbox_id = "txtColor";
+	var textbox_id = "pageColor";
 	var textbox = document.getElementById(textbox_id);
 
-	var div_id = "div1";
+	var div_id = "divmain";
 	var div = document.getElementById(div_id);
 
 	// We should verify values here before we use them...
