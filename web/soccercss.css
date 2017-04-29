@@ -63,6 +63,8 @@ imgp:hover{
 }
 
 #divmain {
+  margin: auto 0;
+  padding-bottom: 50px;
   background-color: #555;
 }
 
