@@ -97,6 +97,6 @@ imgp:hover{
   text-decoration: none;
 }
 
-.hover-bold:hover {
-	font-weight: bold;
+.page {
+  float: right;
 }
