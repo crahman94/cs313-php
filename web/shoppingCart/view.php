@@ -11,7 +11,7 @@
       $major = $_POST["major"];
       $comments = $_POST["comments"];
       $things = $_POST["thing"];
-      $thingMap = array('corkscrew' => "Thingamabobs", 'fork' => "Dinglehopper",
+      $thingsMap = array('corkscrew' => "Thingamabobs", 'fork' => "Dinglehopper",
        'pipe' => "Snarfblat", 'watch' => "Gadget");
      ?>
      <p><?php echo $name; ?></p>
@@ -20,7 +20,7 @@
      <p><?php echo $comments; ?></p>
 
      <?php foreach ($things as $thing): ?>
-       <p><?php echo $placesMap[$thing] ?></p>
+       <p><?php echo $thingsMap[$thing] ?></p>
      <?php endforeach; ?>
 
   </body>
