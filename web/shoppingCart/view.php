@@ -10,7 +10,7 @@
       $email = $_POST["email"];
       $major = $_POST["major"];
       $comments = $_POST["comments"];
-      $things = $_POST["thing"];
+      $things = $_POST["things"];
       $thingsMap = array('corkscrew' => "Thingamabobs", 'fork' => "Dinglehopper",
        'pipe' => "Snarfblat", 'watch' => "Gadget");
      ?>
