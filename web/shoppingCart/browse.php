@@ -5,7 +5,7 @@
     <title>Teach 03</title>
   </head>
   <body>
-    <form action="submission.php" method="POST">
+    <form action="view.php" method="POST">
       <label for="name">Name</label>
       <input id="formName" type="text" name="name" placeholder="Name">
       <br>
