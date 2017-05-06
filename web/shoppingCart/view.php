@@ -10,10 +10,18 @@
       $email = $_POST["email"];
       $major = $_POST["major"];
       $comments = $_POST["comments"];
+      $things = $_POST["thing"];
+      $thingMap = array('corkscrew' => "Thingamabobs", 'fork' => "Dinglehopper",
+       'pipe' => "Snarfblat", 'watch' => "Gadget");
+     ?>
      <p><?php echo $name; ?></p>
      <p><?php echo $email; ?></p>
      <p><?php echo $major; ?></p>
      <p><?php echo $comments; ?></p>
+
+     <?php foreach ($things as $thing): ?>
+       <p><?php echo $placesMap[$thing] ?></p>
+     <?php endforeach; ?>
 
   </body>
 </html>
