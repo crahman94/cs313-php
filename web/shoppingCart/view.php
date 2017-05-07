@@ -17,11 +17,12 @@ foreach ($_SESSION["things"] as $thing)
 	echo "<p>$thing_clean</p>";
 }
 ?></p>
-<button class="btn"><a href="browse.php">Continue Browsing</a></button>
+<p><button class="btn"><a href="browse.php">Continue Browsing</a></button>
 <br>
 <br>
 <button class="btn"><a href="checkout.php">Checkout Now</a></button>
 <br>
+</p>
 </div>
 </body>
 </html>
