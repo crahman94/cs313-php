@@ -1,15 +1,17 @@
 <?php
 session_start();
-$street = $_POST["street"];
-$city = $_POST["city"];
-$state = $_POST["state"];
-$zip = $_POST["zip"];
 ?>
 <!DOCTYPE html>
 <html>
 <title>Confirmation</title>
 <link rel="stylesheet" type="text/css" href="cart.css">
 <body id="body">
+  <?php
+  $street = $_POST["street"];
+  $city = $_POST["city"];
+  $state = $_POST["state"];
+  $zip = $_POST["zip"];
+  ?>
   <div id="divmain">
 
 <h1>Your Purchase Details:</h1>
