@@ -20,16 +20,16 @@ ones you would like to buy!</div>
 <form method="POST" action="browse.php">
 	<input type="checkbox" name="things[]" value="Forks">
   <label id="label">Dinglehopper</label>
-  <p style="float:inherit;"><img id="fork" src="../fork.jpg" alt="Fork"><p>
+  <p style="float:inherit; width: 150px; height: 150px;"><img id="fork" src="../fork.jpg" alt="Fork"><p>
 	<input type="checkbox" name="things[]" value="Corkscrew">
   <label id="label">Thingamabob</label>
-  <p style="float:inherit;"><img id="fork" src="../corkscrew.jpg" alt="Corkscrew"><p>
+  <p style="float:inherit; width: 150px; height: 150px;"><img id="fork" src="../corkscrew.jpg" alt="Corkscrew"><p>
 	<input type="checkbox" name="things[]" value="Watch">
   <label id="label">Gadget</label>
-  <p style="float:inherit;"><img id="fork" src="../watch.jpg" alt="Watch"><p>
+  <p style="float:inherit; width: 150px; height: 150px;"><img id="fork" src="../watch.jpg" alt="Watch"><p>
 	<input type="checkbox" name="things[]" value="Pipe">
   <label id="label">Snarfblat</label>
-  <p style="float:inherit;"><img id="fork" src="../pipe.jpg" alt="Pipe"><p>
+  <p style="float:inherit; width: 150px; height: 150px;"><img id="fork" src="../pipe.jpg" alt="Pipe"><p>
 
 
 <br><button class="btn" type="submit">Add Things</button><br/>
