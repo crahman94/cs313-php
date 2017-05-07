@@ -1,11 +1,34 @@
+<?php
+session_start();
+$street = $_POST["street"];
+$city = $_POST["city"];
+$state = $_POST["state"];
+$zip = $_POST["zip"];
+?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Teach 03</title>
-  </head>
-  <body>
-    
+<title>Confirmation</title>
+<link rel="stylesheet" type="text/css" href="cart.css">
+<body id="body">
+  <div id="divmain">
 
-  </body>
+<p>Here are the items you purchase:</p>
+<br>
+<?
+foreach ($_SESSION["items"] as $item)
+{
+	$item_clean = htmlspecialchars($item);
+	echo "<p>$item_clean</p>";
+}
+?>
+
+
+<p>They will be shipped to this location:</p>
+<br>
+
+<?php
+	echo $street . ", \n" . $city . " " . $state .  ", " . $zip;
+?>
+</div>
+</body>
 </html>

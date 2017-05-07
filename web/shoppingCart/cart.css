@@ -1,0 +1,44 @@
+#body {
+	background-color: #018E0E;
+}
+
+#h1 {
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+}
+
+form {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+#imgp {
+    text-align: center;
+}
+
+#img1 {
+ width: 700px;
+  height: 325px;
+
+}
+
+#divmain {
+  padding: 15px;
+  background-color: #555;
+  margin: 0 auto;
+}
+
+.fork {
+	padding: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+#label {
+	font-size: 1.5em;
+	color:lightblue;
+}

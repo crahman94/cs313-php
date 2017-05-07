@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <title>Little Mermaid Shop!</title>
-<link rel="stylesheet" type="text/css" href="../soccercss.css">
+<link rel="stylesheet" type="text/css" href="cart.css">
 <body id="body">
 
 <div align="center" id="divmain">

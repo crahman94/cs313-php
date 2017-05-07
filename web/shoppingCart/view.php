@@ -4,11 +4,11 @@ session_start();
 <!DOCTYPE html>
 <html>
 <title>View your Cart</title>
-<link rel="stylesheet" type="text/css" href="../soccercss.css">
+<link rel="stylesheet" type="text/css" href="cart.css">
 <body id="body">
 <div id="divmain">
 
-<p>Here are the items in your cart currently from your last submission:</p>
+<p>These are the things that you have selected to buy:</p>
 <br>
 <?php
 foreach ($_SESSION["things"] as $thing)
@@ -17,7 +17,6 @@ foreach ($_SESSION["things"] as $thing)
 	echo "<p>$thing_clean</p>";
 }
 ?>
-<p>Would you like to remove any of them?</p>
 <button class="btn"><a href="browse.php">Continue Browsing</a></button>
 <br>
 <br>
