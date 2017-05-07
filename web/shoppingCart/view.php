@@ -6,6 +6,7 @@ session_start();
 <title>View your Cart</title>
 <link rel="stylesheet" type="text/css" href="../soccercss.css">
 <body id="body">
+<div id="divmain">
 
 <p>Here are the items in your cart currently from your last submission:</p>
 <br>
@@ -17,10 +18,11 @@ foreach ($_SESSION["things"] as $thing)
 }
 ?>
 <p>Would you like to remove any of them?</p>
-<a href="browse.php">Return to Browse</a>
+<button class="btn"><a href="browse.php">Continue Browsing</a></button>
 <br>
 <br>
-<a href="checkout.php">Continue to Checkout</a>
+<button class="btn"><a href="checkout.php">Checkout Now</a></button>
 <br>
+</div>
 </body>
 </html>

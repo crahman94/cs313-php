@@ -13,7 +13,7 @@ session_start();
 
 <div>Coming to you right from Ariel's cave its all your favorite human things!</div>
 <p id="imgp"><img id="img1" src="../arielcave.jpg" alt="Ariel's Cave"><p>
-<div>All these things are great for your everyday mermaid need!
+<div>All these things are great for your everyday mermaid needs!
 Scuttle has helped us name them for your convenience! Check which
 ones you would like to buy!</div>
 
@@ -37,7 +37,7 @@ ones you would like to buy!</div>
 </form>
 
 
-<a href="view.php">View your Cart</a>
+<button class="btn"><a href="view.php">View your Cart</a></button>
 <br>
 <?php
 $_SESSION["things"] = $_POST["things"];
