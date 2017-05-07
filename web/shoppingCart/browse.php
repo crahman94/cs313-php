@@ -18,7 +18,6 @@ Scuttle has helped us name them for your convenience! Check which
 ones you would like to buy!</div>
 
 <form method="POST" action="browse.php">
-	<p></p>
 	<input type="checkbox" name="things[]" value="Forks">
   <label id="label">Dinglehopper</label>
   <p style="float:inherit;"><img id="fork" src="../fork.jpg" alt="Fork"><p>
