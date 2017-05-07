@@ -17,7 +17,7 @@ foreach ($_SESSION["things"] as $thing)
 }
 ?>
 <p>Would you like to remove any of them?</p>
-<a href="browse03.php">Return to Browse</a>
+<a href="browse.php">Return to Browse</a>
 <br>
 <br>
 <a href="checkout.php">Continue to Checkout</a>
