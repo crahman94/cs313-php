@@ -12,22 +12,22 @@ $zip = $_POST["zip"];
 <body id="body">
   <div id="divmain">
 
-<p>Here are the items you purchase:</p>
+<p>Your Purchase Details:</p>
 <br>
-<?
-foreach ($_SESSION["items"] as $item)
+<p><?
+foreach ($_SESSION["things"] as $thing)
 {
-	$item_clean = htmlspecialchars($item);
-	echo "<p>$item_clean</p>";
+	$thing_clean = $thing;
+	echo "<p>$thing_clean</p>";
 }
-?>
+?></p>
 
 
-<p>They will be shipped to this location:</p>
+<p>Shipping Information</p>
 <br>
 
 <p><?php
-	echo $street . ", " . $city . " " . $state .  ", " . $zip;
+	echo $street . ", \n" . $city . " " . $state .  ", " . $zip;
 ?></p>
 </div>
 </body>
