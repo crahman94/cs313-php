@@ -9,7 +9,7 @@ session_start();
 <body id="body">
 
 <div align="center" id="divmain">
-<h1>Ariel's Shop of Humans</h1>
+<h1>Ariel's Shop of Humans Things</h1>
 
 <div>Coming to you right from Ariel's cave its all your favorite human things!</div>
 <p id="imgp"><img id="img1" src="../arielcave.jpg" alt="Ariel's Cave"><p>
