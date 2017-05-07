@@ -26,9 +26,9 @@ foreach ($_SESSION["items"] as $item)
 <p>They will be shipped to this location:</p>
 <br>
 
-<?php
-	echo $street . ", \n" . $city . " " . $state .  ", " . $zip;
-?>
+<p><?php
+	echo $street . ", " . $city . " " . $state .  ", " . $zip;
+?></p>
 </div>
 </body>
 </html>
