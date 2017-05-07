@@ -15,7 +15,6 @@ session_start();
   <div id="divmain">
 
 <h1>Your Purchase Details:</h1>
-<br>
 <p><?
 foreach ($_SESSION["things"] as $thing)
 {
