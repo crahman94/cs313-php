@@ -10,13 +10,13 @@ session_start();
 
 <p>These are the things that you have selected to buy:</p>
 <br>
-<?php
+<p><?php
 foreach ($_SESSION["things"] as $thing)
 {
 	$thing_clean = htmlspecialchars($thing);
 	echo "<p>$thing_clean</p>";
 }
-?>
+?></p>
 <button class="btn"><a href="browse.php">Continue Browsing</a></button>
 <br>
 <br>

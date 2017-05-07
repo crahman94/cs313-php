@@ -35,6 +35,7 @@ ones you would like to buy!</div>
 
 <br><button class="btn" type="submit">Add Things</button><br/>
 </form>
+<br>
 
 
 <button class="btn"><a href="view.php">View your Cart</a></button>
