@@ -12,7 +12,7 @@ $zip = $_POST["zip"];
 <body id="body">
   <div id="divmain">
 
-<p>Your Purchase Details:</p>
+<h1>Your Purchase Details:</h1>
 <br>
 <p><?
 foreach ($_SESSION["things"] as $thing)
@@ -23,11 +23,11 @@ foreach ($_SESSION["things"] as $thing)
 ?></p>
 
 
-<p>Shipping Information</p>
+<h2>Shipping Information</h2>
 <br>
 
 <p><?php
-	echo $street . ", \n" . $city . " " . $state .  ", " . $zip;
+	echo $street . ", " . $city . " " . $state .  ", " . $zip;
 ?></p>
 </div>
 </body>
