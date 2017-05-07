@@ -1,54 +1,49 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Teach 03</title>
-  </head>
-  <body>
-    <form action="view.php" method="POST">
-      <label for="name">Name</label>
-      <input id="formName" type="text" name="name" placeholder="Name">
-      <br>
-      <label for="email">Email</label>
-      <input id="formEmail" type="text" name="email">
-      <br>
-      <?php
-        $majors = array('Computer Science', 'Web Design and Development', 'Computer Information Technology', 'Computer Engineering');
-       ?>
-       <?php foreach ($majors as $major): ?>
-         <input type="radio" name="major" value="<?php echo $major; ?>">
-         <label for="major"><?php echo $major; ?></label>
-         <br>
-       <?php endforeach; ?>
-       <label for="comments">Comments:</label>
-       <br>
-      <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
-      <br>
-      <?php $things = array(); ?>
-      <input id="corkscrew" type="checkbox" name="things[]" value="corkscrew">
-      <label for="corkscrew">Thingamabobs</label>
-      <br>
-      <input id="fork" type="checkbox" name="things[]" value="fork">
-      <label for="fork">Dinglehopper</label>
-      <br>
-      <input id="pipe" type="checkbox" name="things[]" value="pipe">
-      <label for="pipe">Snafblat</label>
-      <br>
-      <input id="watch" type="checkbox" name="things[]" value="watch">
-      <label for="watch">Gadgets</label>
-      <br>
-      <!-- <input id="au" type="checkbox" name="things[]" value="au">
-      <label for="au">Australia</label>
-      <br>
-      <input id="af" type="checkbox" name="things[]" value="af">
-      <label for="af">Afria</label>
-      <br>
-      <input id="an" type="checkbox" name="things[]" value="an">
-      <label for="an">Antarctica</label>
-      <br> -->
-      <br>
-      <input type="submit" name="submit" value="Submit">
-    </form>
+<title>Little Mermaid Shop!</title>
+<link rel="stylesheet" type="text/css" href="../soccercss.css">
+<body id="body">
 
-  </body>
+<div align="center" id="divmain">
+<h1>Ariel's Shop of Humans</h1>
+
+<div>Coming to you right from Ariel's cave its all your favorite human things!</div>
+<p id="imgp"><img id="img1" src="../arielcave.jpg" alt="Ariel's Cave"><p>
+<div>All these things are great for your everyday mermaid need!
+Scuttle has helped us name them for your convenience! Check which
+ones you would like to buy!</div>
+
+<form method="POST" action="browse.php">
+	<p></p>
+	<input type="checkbox" name="things[]" value="Forks">
+  <label id="label">Dinglehopper</label>
+  <p style="float:inherit;"><img id="fork" src="../fork.jpg" alt="Fork"><p>
+	<input type="checkbox" name="things[]" value="Corkscrew">
+  <label id="label">Thingamabob</label>
+  <p style="float:inherit;"><img id="fork" src="../corkscrew.jpg" alt="Corkscrew"><p>
+	<input type="checkbox" name="things[]" value="Watch">
+  <label id="label">Gadget</label>
+  <p style="float:inherit;"><img id="fork" src="../watch.jpg" alt="Watch"><p>
+	<input type="checkbox" name="things[]" value="Pipe">
+  <label id="label">Snarfblat</label>
+  <p style="float:inherit;"><img id="fork" src="../pipe.jpg" alt="Pipe"><p>
+
+
+<br><button class="btn" type="submit">Add Things</button><br/>
+</form>
+
+
+<a href="view.php">View your Cart</a>
+<br>
+<?php
+$_SESSION["things"] = $_POST["things"];
+?>
+<br>
+</div>
+
+</body>
 </html>

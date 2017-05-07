@@ -47,7 +47,7 @@ imgp:hover{
 }
 
 #img1 {
-  width: 700px;
+	width: 700px;
   height: 325px;
 
 }
@@ -63,9 +63,7 @@ imgp:hover{
 }
 
 #divmain {
-  height: 98%;
-  width: 98%;
-  padding: 10px;
+  padding: 15px;
   background-color: #555;
   margin: 0 auto;
 }
@@ -100,4 +98,15 @@ imgp:hover{
 
 .page {
   float: right;
+}
+
+#fork {
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+}
+
+#label {
+	font-size: 1.5em;
+	color:lightblue;
 }

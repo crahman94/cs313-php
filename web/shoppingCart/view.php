@@ -1,27 +1,26 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Info</title>
-  </head>
-  <body>
-    <?php
-      $name = $_POST["name"];
-      $email = $_POST["email"];
-      $major = $_POST["major"];
-      $comments = $_POST["comments"];
-      $things = $_POST["things"];
-      $thingsMap = array('corkscrew' => "Thingamabobs", 'fork' => "Dinglehopper",
-       'pipe' => "Snarfblat", 'watch' => "Gadget");
-     ?>
-     <p><?php echo $name; ?></p>
-     <p><?php echo $email; ?></p>
-     <p><?php echo $major; ?></p>
-     <p><?php echo $comments; ?></p>
+<title>View your Cart</title>
+<link rel="stylesheet" type="text/css" href="../soccercss.css">
+<body id="body">
 
-     <?php foreach ($things as $thing): ?>
-       <p><?php echo $thingsMap[$thing] ?></p>
-     <?php endforeach; ?>
-
-  </body>
+<p>Here are the items in your cart currently from your last submission:</p>
+<br>
+<?php
+foreach ($_SESSION["things"] as $thing)
+{
+	$thing_clean = htmlspecialchars($thing);
+	echo "<p>$thing_clean</p>";
+}
+?>
+<p>Would you like to remove any of them?</p>
+<a href="browse03.php">Return to Browse</a>
+<br>
+<br>
+<a href="checkout.php">Continue to Checkout</a>
+<br>
+</body>
 </html>
